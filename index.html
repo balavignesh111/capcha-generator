@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capcha generator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">CAPTCHA GENERATOR</h1>
+    <div class="capcha-generator-box">
+      <div class="capcha-box">
+        <img src="./image/bg.png" alt="bg" class="capcha-bg">
+        <span class="capcha"></span>
+      </div>
+      <button class="reset-button">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+    </div>
+    <div class="user-input">
+      <input 
+      type="text"
+      class="capcha-input" id="capcha-input"
+      placeholder="Enter capcha"
+      >
+      <button>Check</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
