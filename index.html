@@ -13,9 +13,9 @@
     <div class="capcha-generator-box">
       <div class="capcha-box">
         <img src="./image/bg.png" alt="bg" class="capcha-bg">
-        <span class="capcha"></span>
+        <span class="capcha">oiKl23</span>
       </div>
-      <button class="reset-button">
+      <button class="btn reset-button">
         <i class="fa-solid fa-rotate-right"></i>
       </button>
     </div>
@@ -24,9 +24,12 @@
       type="text"
       class="capcha-input" id="capcha-input"
       placeholder="Enter capcha"
+      minlength="5"
+      maxlength="5"
       >
-      <button>Check</button>
+      <button class="btn btn-check">Check</button>
     </div>
+    <p class="capcha-msg">Captcha not matched. Please try again!</p>
   </div>
   <script src="./script.js"></script>
 </body>

@@ -18,6 +18,8 @@ html{
 body{
   background-color: var(--clr-bg);
   font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,7 +32,9 @@ body{
   width: 30rem;
   padding: 2rem;
   border-radius: 1rem;
-  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /* title */
@@ -42,17 +46,86 @@ body{
 /* capcha-generator-box */
 .capcha-generator-box{
   width: 28rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 5px;
 }
 
 .capcha-bg{
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .capcha-box{
-  width: 20rem;
-  /* height: 5rem; */
+  width: 22rem;
+  height: 100%;
+  position: relative;
+}
+/* capcha msg */
+.capcha{
+  top: 0.2rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  letter-spacing: 2.5rem;
+  font-style: italic;
+}
+
+/* button */
+.btn{
+  color: white;
+  background-color: var(--clr-orange);
+}
+
+.reset-button{
+  font-size: 1.3rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid var(--clr-orange);
+  border-radius: 5px;
+}
+
+/* i/p field */
+.user-input{
+  width: 26rem;
+  height: 3rem;
+  padding: 0.2rem;
+  border: 2px solid var(--clr-orange);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.capcha-input{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+/* check-btn */
+.btn-check{
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--clr-orange);
+  border-radius: 5px;
+}
+
+/* capcha msg */
+.capcha-msg{
+  text-align: center;
+}
+.capcha-msg.failure{
+  color: red;
+}
+
+.capcha-msg.success{
+  color: green;
 }
