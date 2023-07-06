@@ -38,6 +38,7 @@ function init(){
   capchaMsg.style.display = 'none';
   finalCapcha = capcha();
   computerGeneratedCapcha.innerText = finalCapcha;
+  userInput.value = '';
 }
 
 const result = function(str){
